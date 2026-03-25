@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COIProject</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- p5.js -->
     <script src="https://cdn.jsdelivr.net/npm/p5@2.1.2/lib/p5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5.sound@0.2.0/dist/p5.sound.min.js"></script>
+    <!-- MediaPipe drawing utils (needed by hand landmarker) -->
+    <script src="drawing_utils.js"></script>
 </head>
 <body>
+    <!-- MediaPipe script (ES module – sets up window.setCameraStreamToMediaPipe) -->
+    <script type="module" src="script.js"></script>
+
+    <!-- Main p5 sketch -->
     <script src="sketch.js"></script>
 </body>
 </html>
