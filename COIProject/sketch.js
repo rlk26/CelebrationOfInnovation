@@ -34,6 +34,8 @@ function setup() {
 
 function draw() {
   sceneManager.draw();
+    
+    //image filtering here
 }
 
 function keyPressed() {

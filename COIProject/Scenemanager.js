@@ -1,8 +1,3 @@
-/**
- * SceneManager.js
- * Maintains an ordered list of Scene instances and manages the active one.
- * Scenes are accessed by their numeric index (matching key presses 0-9).
- */
 class SceneManager {
   constructor() {
     /** @type {Scene[]} */

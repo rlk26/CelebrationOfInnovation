@@ -1,8 +1,3 @@
-/**
- * HandDrawingScene.js
- * Scene 4: hand-tracking drawing canvas via MediaPipe + webcam.
- * All state is instance-level; no globals leak outside this class.
- */
 class HandDrawingScene extends Scene {
   constructor() {
     super("HandDrawing");
