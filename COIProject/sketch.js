@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /**
  * sketch.js
  * Entry point. Creates a SceneManager, registers all scenes,
@@ -13,6 +14,9 @@
  */
 
 let sceneManager;
+=======
+let current
+>>>>>>> Stashed changes
 
 function setup() {
   createCanvas(800, 600);
