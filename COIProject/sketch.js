@@ -1,22 +1,4 @@
-<<<<<<< Updated upstream
-/**
- * sketch.js
- * Entry point. Creates a SceneManager, registers all scenes,
- * and delegates p5 lifecycle hooks to it.
- *
- * Load order in index.html must be:
- *   1. p5.js
- *   2. Scene.js
- *   3. SceneManager.js
- *   4. SimpleScenes.js
- *   5. HandDrawingScene.js
- *   6. sketch.js          ← this file
- */
-
 let sceneManager;
-=======
-let current
->>>>>>> Stashed changes
 
 function setup() {
   createCanvas(800, 600);
