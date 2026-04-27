@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /**
  * sketch.js
@@ -15,6 +16,9 @@
 
 let sceneManager;
 let current
+=======
+let sceneManager;
+>>>>>>> 048a0abc3380f44df7beb4ff141431294477f287
 
 function setup() {
   createCanvas(800, 600);
