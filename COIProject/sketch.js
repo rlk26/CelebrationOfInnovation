@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 /**
  * sketch.js
  * Entry point. Creates a SceneManager, registers all scenes,
@@ -14,9 +14,7 @@
  */
 
 let sceneManager;
-=======
 let current
->>>>>>> Stashed changes
 
 function setup() {
   createCanvas(800, 600);
@@ -30,6 +28,7 @@ function setup() {
     new GreyScene(),        // key 2
     new WhiteScene(),       // key 3
     new HandDrawingScene(), // key 4
+    new ClaireFilter(),
   );
 
   // Start on the home screen
