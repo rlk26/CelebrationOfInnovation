@@ -17,8 +17,15 @@
 let sceneManager;
 let current;
 
+let splashImg, legend;
+
+function preload() {
+    splashImg = loadImage("FingerpaintCV.png");
+    legend = loadImage("legend.png");
+}
+
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(1200, 800);
 
   sceneManager = new SceneManager();
 
@@ -28,8 +35,11 @@ function setup() {
     new BlackScene(),       // key 1
     new GreyScene(),        // key 2
     new WhiteScene(),       // key 3
-    new HandDrawingScene(), // key 4
+    new HandDrawingScene(sceneManager, splashImg, legend), // key 4
     new ClaireFilter(),
+    new FaceTrackingScene(),
+    new FaceChomperScene(),
+      new NeonVectorScene(),
   );
 
   // Start on the home screen
@@ -43,9 +53,17 @@ function draw() {
 }
 
 function keyPressed() {
+    if (keyCode == ENTER) {
+    sceneManager.currentScene().takeSnap();
+    return; // don't also pass 'S' down to scene logic
+  }
   sceneManager.keyPressed();
 }
 
 function mouseMoved() {
   sceneManager.mouseMoved();
+}
+
+function mousePressed() {
+    sceneManager.mousePressed();
 }

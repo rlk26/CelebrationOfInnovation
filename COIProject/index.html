@@ -12,16 +12,33 @@
   <!-- 1. p5.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.min.js"></script>
 
+    <script src="clmtrackr.min.js"></script>
+  <script src="emotion_classifier.js"></script>
+   <script src="emotionModel.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.17.0/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection@1.0.5/dist/face-landmarks-detection.min.js"></script>
+    
+    <script src="drawing_utils.js"></script>
+    //<script src="hands.js"></script>
+    <script src="p5.min.js"></script>
+    <script src="script.js"></script>
   <!-- 2. Scene architecture -->
   <script src="Scene.js"></script>
   <script src="SceneManager.js"></script>
+    <!-- MediaPipe -->
 
   <!-- 3. Individual scene files (add new scenes here) -->
   <script src="SimpleScenes.js"></script>
   <script src="HandDrawingScene.js"></script>
     <script src="ClaireFilter.js"></script>
-
+    
+    <script src="FaceTrackingScene.js"></script>
+    <script src="FaceChomperScene.js"></script>
+    <script src="NeonVectorScene.js"></script>
+    
   <!-- 4. Entry point -->
   <script src="sketch.js"></script>
+    
 </body>
 </html>

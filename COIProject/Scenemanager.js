@@ -42,9 +42,16 @@ class SceneManager {
       this.current.keyPressed();
     }
   }
+    
+    currentScene() {
+  return this.scenes[this.currentIndex]; // adjust to match your internal variable name
+}
 
   /** Forward mouseMoved. */
   mouseMoved() {
     if (this.current) this.current.mouseMoved();
   }
+    mousePressed() {
+    if (this.current) this.current.mousePressed();
+}
 }
