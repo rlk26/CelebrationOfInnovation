@@ -127,7 +127,7 @@ function drawApp() {
     imageMode(CORNER);
 
     if (hand_results && hand_results.landmarks) {
-        for (const landmarks of hand_results.landmarks) {
+        for (const landmarks of hand_results.landmarks.length > 8) {
             drawHand(landmarks);
             let gesture = getGesture(landmarks);
 
